@@ -21,41 +21,70 @@ h1 {
 }
 
 nav {
-    /* background-color: #5D6D7E; */
     color: #000;
     margin: 0px;
-    overflow: hidden;
-
-    /* Hint: Put your Flex CSS code here to organize each menu */
     display:contents;
-
 }
 
 nav a {
     display: block;
     color: black;
     padding: 14px 16px;
-    flex-direction: row;
     text-align: center;
-
+    flex-direction: row;
 }
 
 nav a:hover {
-    color: #afafaf;
+    color: #fafafa;
 }
 
 .container {
     padding: 10px;
-
-    /* Hint: Put your Flex CSS code here to organize each section */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-self: space-evenly;
 }
 
-
 .footer{
     text-align: center;
+
+}
+@media screen and (min-width: 768px) { 
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-self: space-evenly;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    .column{
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 768px) { 
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: space-evenly;
+        align-items: flex-start;
+
+    }
+  
 
 }
