@@ -50,6 +50,7 @@ nav a:hover {
     text-align: center;
 
 }
+
 @media screen and (min-width: 768px) { 
     nav {
         flex-direction: row;
@@ -84,7 +85,6 @@ nav a:hover {
         justify-self: space-evenly;
         align-items: flex-start;
 
-    }
-  
+    }  
 
 }
